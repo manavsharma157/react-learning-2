@@ -1,0 +1,78 @@
+/* Center everything */
+.ticket-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+/* Title */
+.title {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Ticket numbers */
+.ticket {
+  font-size: 1.5rem;
+  color: #222;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+/* Message styling */
+.message {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Win message */
+.message.win {
+  color: #2ecc71;
+  animation: pop 0.6s ease-in-out;
+}
+
+/* Lose message */
+.message.lose {
+  color: #e74c3c;
+}
+
+/* Button */
+.btn {
+  padding: 12px 25px;
+  font-size: 1rem;
+  background: #6c5ce7;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  background: #4834d4;
+  transform: scale(1.05);
+}
+
+/* Winning animation */
+@keyframes pop {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
